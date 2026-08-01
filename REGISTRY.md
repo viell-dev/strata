@@ -45,16 +45,17 @@ Spec: [json.org](https://www.json.org/) / [RFC 8259](https://datatracker.ietf.or
 
 ### JSONC
 
-Status: planned. JSON with comments, as used by VS Code settings files. Spec:
-[jsonc.org](https://jsonc.org/) — a well-defined grammar with formal ABNF, describing the syntax
-of Microsoft's [`jsonc-parser`](https://github.com/microsoft/node-jsonc-parser). A second,
+Status: planned. JSON with comments. Spec: [jsonc.org](https://jsonc.org/) — a well-defined
+grammar with formal ABNF, describing the syntax of Microsoft's
+[`jsonc-parser`](https://github.com/microsoft/node-jsonc-parser). The spec does not include
+trailing commas but permits parsers to support them, as VS Code's settings parser does. A second,
 Codeberg-hosted JSONC spec exists but does not constitute a JSON superset in its current state;
 if it is ever supported, its packages would carry a [flavour](NAMING.md#flavours)
 (`strata-jsonc-codeberg`).
 
 | Package | Layer | Description | Links |
 | --- | --- | --- | --- |
-| `strata-jsonc-rules` | Token rules | JSON rules plus comment (and trailing-comma) rules | _planned_ |
+| `strata-jsonc-rules` | Token rules | JSON rules plus comment rules | _planned_ |
 | `strata-jsonc-parser` | Parser | JSONC parser reusing the JSON parser parts | _planned_ |
 | `strata-jsonc` | Resolver | Dynamic JSONC document model | _planned_ |
 | `strata-jsonc-serde` | Serde glue | Serde integration for JSONC | _planned_ |
