@@ -66,12 +66,13 @@ namespace is open, first-come-first-serve is what would happen naturally anyway.
 
 ## Flavours
 
-Many languages have no single spec: JSONC has two nearly identical ones, and INI has dozens of
-dialects — practically every INI parser ever written defines its own. The `<flavour>` segment
-names one specific spec or dialect.
+Many languages have no single spec: INI alone has dozens of dialects — practically every INI
+parser ever written defines its own. The `<flavour>` segment names one specific spec or dialect.
 
 - The flavour comes **after** the language name, and is used **only when needed**.
-- A language with one real standard needs no flavour: `strata-json`, `strata-json5`.
+- A language with one real standard needs no flavour: `strata-json`, `strata-json5`. This also
+  covers languages where one spec is clearly the well-defined, authoritative one: JSONC's
+  jsonc.org spec earns it the plain `strata-jsonc`, and any competing spec would carry a flavour.
 - A language with **no authoritative spec must not have a flavour-less package name**: no package
   can be "the" `strata-ini`, so every INI package carries a flavour
   (`strata-ini-<flavour>`, `strata-ini-<flavour>-rules`, …).

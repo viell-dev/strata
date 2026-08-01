@@ -16,11 +16,9 @@ questions go to the [issue tracker](CONTRIBUTING.md#issues-and-discussions);
 | Language | Flavour | Resolver | Serde glue | Status |
 | --- | --- | --- | --- | --- |
 | [JSON](#json) | — | [`strata-json`](https://crates.io/crates/strata-json) | [`strata-json-serde`](https://crates.io/crates/strata-json-serde) | Released |
-| [JSONC](#jsonc) | `vscode`¹ | `strata-jsonc-vscode` | `strata-jsonc-vscode-serde` | Planned |
+| [JSONC](#jsonc) | — | `strata-jsonc` | `strata-jsonc-serde` | Planned |
 | [JSON5](#json5) | — | `strata-json5` | `strata-json5-serde` | Planned |
 | [TOML](#toml-example-user) (@example-user) | — | [`strata-ext-toml`](https://crates.io/crates/strata-ext-toml) | — | Community |
-
-¹ Flavour slugs shown for planned packages are illustrative, not final.
 
 ## Infrastructure
 
@@ -47,16 +45,19 @@ Spec: [json.org](https://www.json.org/) / [RFC 8259](https://datatracker.ietf.or
 
 ### JSONC
 
-Status: planned. JSON with comments, as used by VS Code settings files. JSONC has more than one
-spec, so its packages carry a [flavour](NAMING.md#flavours); the `vscode` slug below is
-illustrative.
+Status: planned. JSON with comments, as used by VS Code settings files. Spec:
+[jsonc.org](https://jsonc.org/) — a well-defined grammar with formal ABNF, describing the syntax
+of Microsoft's [`jsonc-parser`](https://github.com/microsoft/node-jsonc-parser). A second,
+Codeberg-hosted JSONC spec exists but does not constitute a JSON superset in its current state;
+if it is ever supported, its packages would carry a [flavour](NAMING.md#flavours)
+(`strata-jsonc-codeberg`).
 
 | Package | Layer | Description | Links |
 | --- | --- | --- | --- |
-| `strata-jsonc-vscode-rules` | Token rules | JSON rules plus comment (and trailing-comma) rules | _planned_ |
-| `strata-jsonc-vscode-parser` | Parser | JSONC parser reusing the JSON parser parts | _planned_ |
-| `strata-jsonc-vscode` | Resolver | Dynamic JSONC document model | _planned_ |
-| `strata-jsonc-vscode-serde` | Serde glue | Serde integration for JSONC | _planned_ |
+| `strata-jsonc-rules` | Token rules | JSON rules plus comment (and trailing-comma) rules | _planned_ |
+| `strata-jsonc-parser` | Parser | JSONC parser reusing the JSON parser parts | _planned_ |
+| `strata-jsonc` | Resolver | Dynamic JSONC document model | _planned_ |
+| `strata-jsonc-serde` | Serde glue | Serde integration for JSONC | _planned_ |
 
 ### JSON5
 
