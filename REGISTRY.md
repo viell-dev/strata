@@ -48,10 +48,11 @@ Spec: [json.org](https://www.json.org/) / [RFC 8259](https://datatracker.ietf.or
 Status: planned. JSON with comments. Spec: [jsonc.org](https://jsonc.org/) — a well-defined
 grammar with formal ABNF, describing the syntax of Microsoft's
 [`jsonc-parser`](https://github.com/microsoft/node-jsonc-parser). The spec does not include
-trailing commas but permits parsers to support them, as VS Code's settings parser does. A second,
-Codeberg-hosted JSONC spec exists but does not constitute a JSON superset in its current state;
-if it is ever supported, its packages would carry a [flavour](NAMING.md#flavours)
-(`strata-jsonc-codeberg`).
+trailing commas but permits parsers to support them, as VS Code's settings parser does; the
+Strata parser will expose such extensions as opt-in options (strict by default). A second,
+Codeberg-hosted JSONC spec exists but mis-defines JSON in places and does not constitute a JSON
+superset in its current state; no official package is planned for it. A community package for it
+would carry a [flavour](NAMING.md#flavours), e.g. `strata-ext-jsonc-codeberg`.
 
 | Package | Layer | Description | Links |
 | --- | --- | --- | --- |
