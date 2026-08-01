@@ -74,9 +74,7 @@ names one specific spec or dialect.
 - A language with one real standard needs no flavour: `strata-json`, `strata-json5`.
 - A language with **no authoritative spec must not have a flavour-less package name**: no package
   can be "the" `strata-ini`, so every INI package carries a flavour
-  (`strata-ini-<flavour>`, `strata-ini-<flavour>-rules`, …). The exception is a shared rules
-  crate: `strata-ini-rules` may hold the rules common across flavours, for downstream flavour
-  crates to pick and choose from.
+  (`strata-ini-<flavour>`, `strata-ini-<flavour>-rules`, …).
 - Flavour slugs follow the same alphanumeric rule and should be recognizable to people who use
   that dialect. Naming a flavour is genuinely hard when the dialect has no name of its own; ask
   on the issue tracker if in doubt.

@@ -71,8 +71,8 @@ named):
 
 Superset languages compose at the rules and parser-parts level: `strata-jsonc-rules` imports the
 JSON rules and adds a comment rule; the JSONC parser reuses the JSON parser's parts. For languages
-without a single spec, a shared rules crate (for example, a common-INI rules crate) can hold the
-rules every flavour agrees on, and flavour crates pick, choose, and extend.
+without a single spec, flavour rules crates can likewise depend on one another, re-exporting or
+duplicating the rules each dialect shares — whether to depend or duplicate is the author's choice.
 
 ## Glossary
 
