@@ -64,10 +64,6 @@ Where a confusion is _already known_, disambiguate proactively — pick `cuelang
 clash with cue sheets is on the table. But nobody is required to do the research; given that the
 namespace is open, first-come-first-serve is what would happen naturally anyway.
 
-Distinctly named descendants are their own languages: TOML grew out of the INI landscape but has
-its own spec and name, so it lives at `strata-toml`, not under `ini`. Where a superset language
-sits (whether YAML is filed near JSON, for instance) does not affect its name.
-
 ## Flavours
 
 Many languages have no single spec: JSONC has two nearly identical ones, and INI has dozens of
@@ -84,6 +80,20 @@ names one specific spec or dialect.
 - Flavour slugs follow the same alphanumeric rule and should be recognizable to people who use
   that dialect. Naming a flavour is genuinely hard when the dialect has no name of its own; ask
   on the issue tracker if in doubt.
+
+## Language or flavour?
+
+Whether a format gets its own language name or lives as a flavour of its parent is ultimately a
+judgement call for the package author. The useful test is whether the format has a **natural
+unique identifier** of its own:
+
+- TOML grew out of the INI landscape, but it has its own spec and its own name — `strata-toml`
+  is clearly right.
+- MySQL's config dialect has no unique name of its own: `strata-ini-mysql` is better than
+  inventing an identifier like `strata-mysqlini`.
+
+These guidelines can only recommend; when the call is close, either choice is acceptable, and the
+issue tracker is open for a second opinion.
 
 ## The `-official` marker
 
