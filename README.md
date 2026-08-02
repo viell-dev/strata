@@ -15,16 +15,17 @@ ecosystem-wide issues and discussions.
 
 ## Why Strata
 
-- **Source fidelity.** A folded scalar is not the same as a plain one; a comment above a field is
-  not noise. Strata keeps trivia — comments, whitespace, blank lines — instead of discarding it.
-- **Human semantics.** A few fields, a blank line, then a few more fields usually means something
-  to the humans maintaining the file. Strata surfaces that implicit structure instead of erasing
-  it.
-- **Composable languages.** Languages are defined by token rule sets and parser parts, and
-  superset languages reuse their parent's parts: a JSONC parser is essentially the JSON parts plus
-  a comment rule.
-- **Zero-copy by default.** Values stay as reference slices into the source for as long as the
-  caller allows; owned copies begin only at the ownership boundary.
+Sometimes the values are all you need. In that case, a Strata Serde crate can deserialize a file
+straight into your own types. But software that inspects, validates, or explains a file often needs
+to know more. Comments can record why a value was chosen, field order and blank lines can reveal
+how the author grouped the data, and diagnostics are more useful when they can point back to the
+exact source. Strata keeps that information available instead of discarding it during parsing.
+
+Strata aims to provide that same choice across data and configuration languages. Parsers are
+strict by default about the standard or named flavour they accept, rather than each quietly
+inventing another interpretation of the format. The lower layers also keep source data zero-copy
+for as long as practical. That is mostly an implementation detail, but it helps when files or
+individual values get large.
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for the full pipeline and design goals.
 
