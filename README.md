@@ -5,9 +5,9 @@ most parsers reduce a file to the data it evaluates to, Strata retains what the 
 wrote: field order, comments, blank lines, scalar styles, and source spans survive all the way
 through the pipeline.
 
-The name comes from _strata_, the archeology/geology term for layers of deposited material — a nod
-both to the stack of layered packages and to the layers of human meaning deposited in a config
-file.
+The name draws on archaeological strata, where a find's place among the surrounding layers is part
+of its meaning. Strata treats source files similarly, preserving the context that ordinary parsers
+discard.
 
 This repository is the ecosystem hub. It contains no code; it is the public documentation for the
 ecosystem as a whole, the registry of official and community `strata-*` packages, and the home of
