@@ -13,6 +13,11 @@ This repository is the ecosystem hub. It contains no code; it is the public docu
 ecosystem as a whole, the registry of official and community `strata-*` packages, and the home of
 ecosystem-wide issues and discussions.
 
+Strata is a read-only parsing ecosystem for the foreseeable future. Source fidelity supports
+inspection, validation, explanation, diagnostics, and deserialization; it is not a promise of
+mutable editing, source writing, or round-trip serialization. Those are explicit non-goals, with
+only the possibility of a separate expansion in the far future.
+
 ## Why Strata
 
 Sometimes the values are all you need. In that case, a Strata Serde crate can deserialize a file

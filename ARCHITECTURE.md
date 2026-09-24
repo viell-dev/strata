@@ -23,6 +23,17 @@ ecosystem uses. It is the ecosystem-level view; each crate documents its own API
 - **Built from the ground up.** Minimal dependencies and purpose-built layers. The stack existing
   is not the only success criterion; understanding it is one too.
 
+## Read-only scope
+
+Strata is entirely read-only for the foreseeable future. The pipeline consumes and explains
+source; it does not edit or emit source documents. Retaining trivia, spans, order, and written
+forms supports inspection, validation, explanation, diagnostics, and deserialization. It does not
+imply a round-trip writer.
+
+Mutable editing, source writing, and round-trip serialization are explicit non-goals rather than
+missing stages or roadmap items. A separate ecosystem expansion might explore them in the far
+future, but no such work is currently designed or planned.
+
 ## The pipeline
 
 The general flow, from bytes to application values:
