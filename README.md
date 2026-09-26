@@ -88,12 +88,12 @@ The contents of this repository are licensed under [MIT-0](LICENSE) (MIT No Attr
 adapt, and reuse freely, no attribution required.
 
 This only covers the documentation in this repository. The crates are licensed individually; the
-official ones follow the [strata-license][license] template (MPL-2.0 with a Rust usage
-clarification, and MIT-0 for example code).
+official ones follow the MPL-2.0 setup from [strata-template][template] (MPL-2.0 with a Rust
+usage clarification, and MIT-0 for example code).
 
 [lease]: https://codeberg.org/Devious-Concepts/strata-lease
-[license]: https://codeberg.org/Devious-Concepts/strata-license
 [meme]: assets/languages-meme.jpg
 [reader-crate]: https://crates.io/crates/strata-reader
 [reader-docs]: https://docs.rs/strata-reader
 [reader]: https://codeberg.org/Devious-Concepts/strata-reader
+[template]: https://codeberg.org/Devious-Concepts/strata-template

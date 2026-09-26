@@ -31,5 +31,6 @@ Keep Markdown wrapped at 100 columns and match the style of the existing documen
 
 ## Licensing
 
-The contents of this repository are licensed under [MIT-0](LICENSE). By contributing, you agree
-that your contributions are licensed under the same terms.
+This project is licensed under [MIT-0](LICENSE). By contributing, you agree that your original
+contributions are licensed under the same terms. Identify any third-party material and preserve
+its applicable notices so it can be reviewed before inclusion.
