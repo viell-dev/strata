@@ -91,9 +91,9 @@ This only covers the documentation in this repository. The crates are licensed i
 official ones follow the MPL-2.0 setup from [strata-template][template] (MPL-2.0 with a Rust
 usage clarification, and MIT-0 for example code).
 
-[lease]: https://codeberg.org/Devious-Concepts/strata-lease
+[lease]: https://github.com/viell-dev/strata-lease
 [meme]: assets/languages-meme.jpg
 [reader-crate]: https://crates.io/crates/strata-reader
 [reader-docs]: https://docs.rs/strata-reader
 [reader]: https://codeberg.org/Devious-Concepts/strata-reader
-[template]: https://codeberg.org/Devious-Concepts/strata-template
+[template]: https://github.com/viell-dev/strata-template
