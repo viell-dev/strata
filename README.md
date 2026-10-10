@@ -95,5 +95,5 @@ usage clarification, and MIT-0 for example code).
 [meme]: assets/languages-meme.jpg
 [reader-crate]: https://crates.io/crates/strata-reader
 [reader-docs]: https://docs.rs/strata-reader
-[reader]: https://codeberg.org/Devious-Concepts/strata-reader
+[reader]: https://github.com/viell-dev/strata-reader
 [template]: https://github.com/viell-dev/strata-template
