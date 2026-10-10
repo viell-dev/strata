@@ -25,7 +25,7 @@ Early. Very early. This is everything that exists outside of experiments.
 A `BufReader` whose buffer grows as needed, with peeking, retained lookbehind, and manual memory
 control.
 
-- **Status:** released, currently 0.1.2
+- **Status:** released, currently 0.1.3
 - **Links:** [repository][reader] · [crates.io][reader-crate] · [docs.rs][reader-docs]
 
 ### strata-lease
