@@ -14,6 +14,9 @@ Open an issue here for anything that spans more than one crate:
 Crate bugs and feature requests go to that crate's repository. If in doubt, open it here and we
 will move it where it belongs.
 
+When you open an issue, pick the proposal, documentation problem, or question prompt, or start a
+blank issue if none of them fits.
+
 ## Naming your package
 
 The `strata-*` prefix on crates.io is open to anyone, so we can only ask nicely. If you are
