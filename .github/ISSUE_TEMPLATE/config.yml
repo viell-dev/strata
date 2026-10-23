@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Crate bugs and feature requests
+    url: https://github.com/viell-dev/strata/blob/main/README.md#status
+    about: Each crate has its own issue tracker; find its repository under Status.
