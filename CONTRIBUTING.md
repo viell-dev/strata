@@ -29,6 +29,14 @@ anything bigger, open an issue first so we can agree on the direction.
 
 Keep Markdown wrapped at 100 columns and match the style of the existing documents.
 
+## Labels
+
+Issues and pull requests follow the shared
+[label catalog](https://github.com/viell-dev/strata-template/blob/main/labels/README.md) from
+`strata-template`, copied to [.github/labels.json](.github/labels.json). Triage gives each one a
+single `Type:` label. Pull requests written by an agent and submitted from the maintainer's
+account carry `Needs: Review` and are not merged until the maintainer approves them.
+
 ## Licensing
 
 This project is licensed under [MIT-0](LICENSE). By contributing, you agree that your original
